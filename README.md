@@ -1,5 +1,5 @@
 ## Desktop Version ##
-![Desktop Version](images/desktoptestimonials)
+![Desktop Version](design/desktoptestimonials)
 
 ## Mobile Version ##
-![Mobile Version](images/mobiletestimonials)
+![Mobile Version](design/mobiletestimonials)
