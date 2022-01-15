@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+    --light-gray: hsl(0, 0%, 81%);
+    --grayish-blue: hsl(210, 46%, 95%);
+    --white: hsl(0, 0%, 100%);
+    --dark-grayish-blue: hsl(217, 19%, 35%);
+    --lighter-grayish-blue: hsl(218, 16%, 68%);
+    --lighter-lighter-grayish-blue: hsl(217, 21%, 76%);
+    --dark--blackish-blue: hsl(219, 29%, 14%);
+    --moderate-violet: hsl(263, 55%, 52%);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: var(--grayish-blue);
+}
+
+
+.visible-font-color {
+    color: var(--white);
+
+    h4 {
+        color: var(--lighter-lighter-grayish-blue);
+    }
+
+    .direct {
+        color: var(--lighter-lighter-grayish-blue);
+    }
+}
+
+.non-visible-font-color {
+    color: var(--dark-grayish-blue);
+    
+    h4 {
+        color: var(--lighter-grayish-blue);
+    }
+
+    .direct {
+        color: var(--lighter-grayish-blue);
+    }
+}
+
+.testimonials {
+    display: grid;
+    gap: 1.5rem;
+    margin: 8rem 3rem;
+    
+    header {
+        display: flex;
+
+        img {
+            max-width: 30px;
+            max-height: 30px;
+            border-radius: 50%;
+            border: 1px solid var(--lighter-lighter-grayish-blue);
+            margin: 0px 1rem 1rem 0px;
+        }
+    }
+
+    .card1 {
+        background-color: var(--moderate-violet);
+    }
+    
+    .card2 {
+        background-color: var(--dark-grayish-blue);
+    }
+    
+    .card3 {
+        background-color: var(--white);
+    }
+    
+    .card4 {
+        background-color: var(--dark--blackish-blue);
+    }
+    
+    .card5 {
+        background-color: var(--white);
+    }
+}
+
+.card-content {
+    font-family: 'Barlow Semi Condensed';
+    padding: 2rem;
+    border-radius: 10px;
+
+    h3 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    h4 {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .indirect {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .direct {
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .testimonials {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card1 {
+        grid-column: span 2;
+    }
+
+    .card4 {
+        grid-column: span 2;
+    }
+
+    .card5 {
+        grid-column-start: 4;
+        grid-row: 1 / span 2;
+    }
+}
